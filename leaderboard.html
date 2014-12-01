@@ -4,9 +4,9 @@
     {{> leaderboard}}
 </body>
 <template name="leaderboard">
-    <ul>
+    <ul id="players">
     {{#each player}}
-        <li>{{Name}}: {{Score}}</li>
+        <li class="player {{selectedClass}}">{{Name}}: {{Score}}</li>
     {{/each}}
     </ul>
     </template>
