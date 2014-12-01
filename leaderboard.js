@@ -39,6 +39,13 @@ if(Meteor.isClient)
 
             var selectedPlayer = Session.get('selectedPlayer');
             PlayerList.update(selectedPlayer,{$inc:{Score:-5}});
+        },
+
+        'click .remove':function()
+        {
+
+            var selectedPlayer = Session.get('selectedPlayer');
+            PlayerList.remove(selectedPlayer);
         }
 
 
@@ -56,6 +63,7 @@ if(Meteor.isClient)
             });
 
         }
+
 
     });
 }
