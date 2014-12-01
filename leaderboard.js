@@ -47,6 +47,15 @@ if(Meteor.isClient)
 
             var selectedPlayer = Session.get('selectedPlayer');
             PlayerList.remove(selectedPlayer);
+        },
+        'submit form':function(event){
+        event.preventDefault();
+            var selectedPlayer = Session.get('selectedPlayer');
+            var points = parseInt(event.target.pointsToAdd.value);
+            PlayerList.update(selectedPlayer,{$inc:{Score:points}});
+            //PlayerList.update()
+           console.log(points);
+            console.log(event.type);
         }
 
 
