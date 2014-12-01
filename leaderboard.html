@@ -1,10 +1,14 @@
-<head>Leaderboard</head>
+
 <body>
-<h1>Leaderboard</h1>
-    {{> loginButtons}}
+    <h1 class ="appName">LEADERBOARD</h1>
+    <div class="login">
+        {{> loginButtons}}
+    </div>
     {{> leaderboard}}
     {{> addPlayerForm}}
 </body>
+
+
 <template name="leaderboard">
     <ul id="players">
     {{#each player}}
@@ -16,13 +20,10 @@
             <input type="text" name="pointsToAdd"/>
             <input type="submit" class = "addPoints" value="Add"/>
         </form>
-        {{/if}}
-
-
-        <input type = "button" class="increment" value="Give 5 points"/>
 
         <input type="button" class = "remove" value = "remove player"/>
 
+        {{/if}}
         {{#if currentUser}}
         {{#if showSelectedPlayer}}
         <li>selectedPlayer : {{showSelectedPlayer.Name}}</li>

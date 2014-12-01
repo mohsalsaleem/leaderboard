@@ -2,3 +2,36 @@
 .selected{
 background-color: yellow;
 }
+
+body{
+
+    background-color: #b0bec5;
+    }
+.appName{
+
+    background-color: #01579b;
+    font-family: salimica;
+    font-size: 18px;
+    color: white;
+    text-align: center;
+    height: 50px;
+}
+
+
+
+.login{
+
+background-color: #455a64;
+    height: 50px;
+    font-size: 18px;
+    text-align: center;
+    color: black;
+
+}
+
+@font-face{
+
+    font-family:salimica;
+    src:
+        url("/fonts/salimica.ttf");
+    }
