@@ -82,5 +82,5 @@ if(Meteor.isClient)
 
 if(Meteor.isServer)
 {
-
+    Kadira.connect('YhWCcgXNJs7cQKe42', 'e035b33a-a5a5-4a3c-afd6-6e7599145a2f')
 }
